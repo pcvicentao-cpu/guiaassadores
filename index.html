@@ -1,524 +1,706 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guia visual para aprender técnicas, parâmetros e consistência no churrasco e nos assados.">
-  <title>Guia dos Assadores — Método, fogo e consistência</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta
+        name="description"
+        content="Guia dos Assadores — aprenda a preparar carnes, controlar o fogo, temperar e acertar o ponto."
+    >
 
-  <link rel="stylesheet" href="style.css">
+    <title>Guia dos Assadores</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="site-header" id="topo">
-  <div class="container nav">
+<header class="header">
 
-    <a class="logo" href="#topo" aria-label="Guia dos Assadores">
-      <span class="logo-mark">GA</span>
-      <span>Guia dos <b>Assadores</b></span>
-    </a>
+    <div class="container nav">
 
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-      ☰
-    </button>
+        <a href="#" class="logo">
+            Guia dos <span>Assadores</span>
+        </a>
 
-    <nav class="nav-links" aria-label="Navegação principal">
-      <a href="#metodo">Método</a>
-      <a href="#parametros">Parâmetros</a>
-      <a href="#treino">Treino</a>
-      <a href="#avaliacao">Avaliação</a>
-    </nav>
+        <nav id="menu">
 
-    <a class="nav-cta" href="#treino">
-      Começar treino →
-    </a>
+            <a href="#inicio">Início</a>
+            <a href="#fogo">Fogo</a>
+            <a href="#temperos">Temperos</a>
+            <a href="#carnes">Carnes</a>
+            <a href="#pontos">Pontos</a>
+            <a href="#videos">Vídeos</a>
 
-  </div>
+        </nav>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </div>
+
 </header>
 
 
 <main>
 
-<section class="hero">
+<!-- HERO -->
 
-  <div
-    class="hero-image"
-    role="img"
-    aria-label="Carne sendo assada sobre brasas">
-  </div>
+<section class="hero" id="inicio">
 
-  <div class="hero-overlay"></div>
+    <div class="container hero-content">
 
-  <div class="container hero-content">
+        <div class="hero-text">
 
-    <div class="eyebrow light">
-      MANUAL DE CAMPO · EDIÇÃO 01
-    </div>
+            <span class="tag">
+                GUIA COMPLETO PARA ASSADORES
+            </span>
 
-    <h1>
-      Aprenda a assar.<br>
-      <em>Aprenda a repetir.</em>
-    </h1>
+            <h1>
+                Aprenda a <strong>assar</strong>
+                como um profissional.
+            </h1>
 
-    <p>
-      Um guia visual para transformar fogo, temperatura e tempo
-      em um processo que você consegue observar, registrar e melhorar.
-    </p>
+            <p>
+                Aprenda a controlar o fogo, preparar a carne,
+                escolher os temperos, controlar a temperatura
+                e acertar o ponto de cada corte.
+            </p>
 
-    <div class="hero-actions">
-      <a class="button button-primary" href="#metodo">
-        Explorar o método
-      </a>
+            <div class="hero-buttons">
 
-      <a class="button button-ghost" href="#parametros">
-        Ver parâmetros
-      </a>
-    </div>
+                <a href="#carnes" class="button primary">
+                    Ver carnes
+                </a>
 
-  </div>
+                <a href="#fogo" class="button secondary">
+                    Aprender técnicas
+                </a>
 
-  <div class="hero-note">
-    <span>01</span>
-    <p>
-      “Resultado bom é ótimo.<br>
-      Resultado reproduzível é aprendizado.”
-    </p>
-  </div>
+            </div>
 
-</section>
-
-
-<section class="intro section" id="metodo">
-
-  <div class="container intro-grid">
-
-    <div>
-      <div class="eyebrow">
-        01 · A lógica
-      </div>
-
-      <h2>
-        Menos achismo.<br>
-        <span>Mais processo.</span>
-      </h2>
-    </div>
-
-    <div class="intro-copy">
-
-      <p class="lead">
-        O assador evolui quando consegue explicar o que aconteceu —
-        e não apenas quando a carne ficou boa.
-      </p>
-
-      <p>
-        Em cada treino, observe as variáveis que realmente mudam
-        o resultado: combustível, distância da brasa, temperatura
-        interna, tempo, descanso e intervenção no fogo.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="section dark-section" id="parametros">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div>
-        <div class="eyebrow light">
-          02 · A régua
         </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Picanha_barbecue.jpg"
+                alt="Picanha sendo preparada na churrasqueira"
+            >
+
+            <div class="image-caption">
+                <strong>Picanha na churrasqueira</strong>
+                <span>Fogo + técnica + temperatura</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CURSO -->
+
+<section class="section" id="fogo">
+
+    <div class="container">
+
+        <span class="tag">
+            FUNDAMENTOS
+        </span>
 
         <h2>
-          Parâmetros de qualidade
+            Primeiro aprenda a controlar o fogo.
         </h2>
-      </div>
 
-      <p>
-        Use os mesmos critérios em todos os treinos
-        para construir referência.
-      </p>
+        <p class="section-intro">
+            Antes de colocar a carne na churrasqueira,
+            você precisa entender como o calor funciona.
+        </p>
+
+
+        <div class="cards">
+
+            <article class="card">
+
+                <span class="number">01</span>
+
+                <h3>Fogo direto</h3>
+
+                <p>
+                    A carne fica diretamente sobre a brasa.
+                    É indicado principalmente para selar,
+                    dourar e preparar cortes menores.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="number">02</span>
+
+                <h3>Fogo indireto</h3>
+
+                <p>
+                    A carne fica afastada da brasa.
+                    É excelente para peças grandes,
+                    costelas e frango.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="number">03</span>
+
+                <h3>Duas zonas</h3>
+
+                <p>
+                    Tenha uma área quente e outra sem
+                    brasa. Assim você consegue mover
+                    a carne quando necessário.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="fire-guide">
+
+            <div class="fire-zone hot">
+
+                <span>🔥</span>
+
+                <h3>Zona quente</h3>
+
+                <p>
+                    Para selar e criar crosta.
+                </p>
+
+            </div>
+
+
+            <div class="fire-zone medium">
+
+                <span>♨️</span>
+
+                <h3>Zona indireta</h3>
+
+                <p>
+                    Para cozinhar lentamente.
+                </p>
+
+            </div>
+
+
+            <div class="fire-zone safe">
+
+                <span>◻</span>
+
+                <h3>Zona de segurança</h3>
+
+                <p>
+                    Para afastar a carne de chamas.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
-
-    <div class="parameter-grid">
-
-      <article class="parameter-card featured">
-
-        <div class="parameter-photo photo-fire"></div>
-
-        <div class="parameter-body">
-
-          <span class="parameter-number">01</span>
-
-          <h3>
-            Controle do fogo
-          </h3>
-
-          <p>
-            Capacidade de criar zonas de calor, manter estabilidade
-            e corrigir picos sem perder o controle.
-          </p>
-
-          <div class="meter">
-            <span style="width:92%"></span>
-          </div>
-
-          <small>
-            O que observar: brasa · distância · estabilidade
-          </small>
-
-        </div>
-
-      </article>
-
-
-      <article class="parameter-card">
-
-        <div class="parameter-photo photo-steak"></div>
-
-        <div class="parameter-body">
-
-          <span class="parameter-number">02</span>
-
-          <h3>
-            Temperatura
-          </h3>
-
-          <p>
-            Medir o centro da peça e registrar a evolução
-            em vez de depender apenas do relógio.
-          </p>
-
-          <div class="meter">
-            <span style="width:86%"></span>
-          </div>
-
-          <small>
-            O que observar: entrada · evolução · retirada
-          </small>
-
-        </div>
-
-      </article>
-
-
-      <article class="parameter-card">
-
-        <div class="parameter-photo photo-crust"></div>
-
-        <div class="parameter-body">
-
-          <span class="parameter-number">03</span>
-
-          <h3>
-            Crosta
-          </h3>
-
-          <p>
-            Cor, secura superficial e desenvolvimento de sabor
-            sem transformar caramelização em queima.
-          </p>
-
-          <div class="meter">
-            <span style="width:82%"></span>
-          </div>
-
-          <small>
-            O que observar: cor · secura · uniformidade
-          </small>
-
-        </div>
-
-      </article>
-
-
-      <article class="parameter-card">
-
-        <div class="parameter-photo photo-meat"></div>
-
-        <div class="parameter-body">
-
-          <span class="parameter-number">04</span>
-
-          <h3>
-            Textura & ponto
-          </h3>
-
-          <p>
-            Maciez, suculência e resistência das fibras devem
-            fazer sentido para o corte escolhido.
-          </p>
-
-          <div class="meter">
-            <span style="width:88%"></span>
-          </div>
-
-          <small>
-            O que observar: fibra · suculência · corte
-          </small>
-
-        </div>
-
-      </article>
-
-
-      <article class="parameter-card">
-
-        <div class="parameter-body compact">
-
-          <span class="parameter-number">05</span>
-
-          <h3>
-            Repetibilidade
-          </h3>
-
-          <p>
-            Conseguir aproximar o resultado novamente é o indicador
-            de que você entendeu o processo.
-          </p>
-
-          <div class="tag-row">
-            <span>registro</span>
-            <span>variáveis</span>
-            <span>comparação</span>
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <article class="parameter-card">
-
-        <div class="parameter-body compact">
-
-          <span class="parameter-number">06</span>
-
-          <h3>
-            Higiene & segurança
-          </h3>
-
-          <p>
-            Organização, conservação, manipulação e cozimento seguros
-            vêm antes de qualquer resultado.
-          </p>
-
-          <div class="tag-row">
-            <span>limpeza</span>
-            <span>separação</span>
-            <span>temperatura</span>
-          </div>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
 
 </section>
 
 
-<section class="section" id="treino">
+<!-- TEMPEROS -->
 
-  <div class="container">
+<section class="section dark" id="temperos">
 
-    <div class="section-heading">
+    <div class="container">
 
-      <div>
-
-        <div class="eyebrow">
-          03 · A evolução
-        </div>
+        <span class="tag">
+            TEMPEROS
+        </span>
 
         <h2>
-          Uma trilha para aprender
+            Quantidade certa para cada quilo.
         </h2>
 
-      </div>
+        <p class="section-intro">
+            Use as quantidades como ponto de partida e
+            ajuste conforme o corte e seu gosto.
+        </p>
 
-      <p>
-        Não pule etapas. Cada nível cria a base para o próximo.
-      </p>
+
+        <div class="seasoning-calculator">
+
+            <div>
+
+                <label for="weight">
+                    Quantidade de carne
+                </label>
+
+                <div class="weight-input">
+
+                    <input
+                        id="weight"
+                        type="number"
+                        min="0.5"
+                        step="0.5"
+                        value="2"
+                    >
+
+                    <span>kg</span>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <label for="seasoning">
+                    Tipo de tempero
+                </label>
+
+                <select id="seasoning">
+
+                    <option value="salt">
+                        Sal
+                    </option>
+
+                    <option value="dryrub">
+                        Dry Rub
+                    </option>
+
+                    <option value="herbs">
+                        Alho + ervas
+                    </option>
+
+                    <option value="marinade">
+                        Marinada
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="seasoning-result">
+
+                <span>
+                    Quantidade recomendada
+                </span>
+
+                <strong id="seasoningResult">
+                    24 g
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="cards seasoning-cards">
+
+            <article class="card dark-card">
+
+                <span class="number">01</span>
+
+                <h3>Sal</h3>
+
+                <p>
+                    Base de aproximadamente
+                    <strong>10–12 g por kg</strong>
+                    de carne.
+                </p>
+
+                <small>
+                    Excelente para picanha, ancho,
+                    contrafilé e outros cortes bovinos.
+                </small>
+
+            </article>
+
+
+            <article class="card dark-card">
+
+                <span class="number">02</span>
+
+                <h3>Dry Rub</h3>
+
+                <p>
+                    Aproximadamente
+                    <strong>25–30 g por kg</strong>.
+                </p>
+
+                <small>
+                    Pode combinar sal, páprica,
+                    alho, pimenta e ervas.
+                </small>
+
+            </article>
+
+
+            <article class="card dark-card">
+
+                <span class="number">03</span>
+
+                <h3>Alho + ervas</h3>
+
+                <p>
+                    Aproximadamente
+                    <strong>12 g de sal/kg</strong>,
+                    mais alho e ervas a gosto.
+                </p>
+
+                <small>
+                    Ótimo para carnes bovinas,
+                    suínas e frango.
+                </small>
+
+            </article>
+
+
+            <article class="card dark-card">
+
+                <span class="number">04</span>
+
+                <h3>Marinada</h3>
+
+                <p>
+                    Use aproximadamente
+                    <strong>200–250 ml/kg</strong>
+                    de líquido.
+                </p>
+
+                <small>
+                    Ideal para frango e cortes suínos.
+                </small>
+
+            </article>
+
+        </div>
 
     </div>
-
-
-    <div class="levels">
-
-      <article class="level">
-
-        <span>01</span>
-
-        <div>
-
-          <h3>
-            Fundamentos
-          </h3>
-
-          <p>
-            Entenda combustível, zonas de calor, distância
-            da brasa e leitura de temperatura.
-          </p>
-
-          <ul>
-            <li>Montar fogo</li>
-            <li>Controlar calor</li>
-            <li>Usar termômetro</li>
-          </ul>
-
-        </div>
-
-      </article>
-
-
-      <article class="level active">
-
-        <span>02</span>
-
-        <div>
-
-          <h3>
-            Processo
-          </h3>
-
-          <p>
-            Escolha um corte, repita a receita e registre tudo
-            o que pode afetar o resultado.
-          </p>
-
-          <ul>
-            <li>Registrar variáveis</li>
-            <li>Comparar resultados</li>
-            <li>Ajustar uma coisa por vez</li>
-          </ul>
-
-        </div>
-
-      </article>
-
-
-      <article class="level">
-
-        <span>03</span>
-
-        <div>
-
-          <h3>
-            Consistência
-          </h3>
-
-          <p>
-            Teste condições diferentes e descubra quais decisões
-            realmente fazem diferença.
-          </p>
-
-          <ul>
-            <li>Repetir</li>
-            <li>Isolar variáveis</li>
-            <li>Criar seu padrão</li>
-          </ul>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
 
 </section>
 
 
-<section class="section training-section">
+<!-- CARNES -->
 
-  <div class="container training-grid">
+<section class="section" id="carnes">
 
-    <div>
+    <div class="container">
 
-      <div class="eyebrow">
-        04 · Ficha de treino
-      </div>
+        <span class="tag">
+            BIBLIOTECA DE CARNES
+        </span>
 
-      <h2>
-        Seu próximo fogo começa aqui.
-      </h2>
+        <h2>
+            Escolha a carne que você quer aprender.
+        </h2>
 
-      <p class="lead">
-        Use o checklist como ritual antes, durante e depois do assado.
-      </p>
+        <p class="section-intro">
+            Cada corte exige uma estratégia diferente.
+            Clique em uma carne para ver técnica,
+            tempero, ponto e vídeo.
+        </p>
 
-      <div class="quote">
-        “Meça. Registre. Repita.<br>
-        <strong>Depois, mude uma variável.</strong>”
-      </div>
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                Todas
+            </button>
+
+            <button class="filter" data-filter="bovina">
+                Bovinas
+            </button>
+
+            <button class="filter" data-filter="suina">
+                Suínas
+            </button>
+
+            <button class="filter" data-filter="aves">
+                Aves
+            </button>
+
+        </div>
+
+
+        <div class="meat-grid" id="meatGrid"></div>
 
     </div>
-
-
-    <div class="checklist" id="checklist"></div>
-
-  </div>
 
 </section>
 
 
-<section class="section evaluation" id="avaliacao">
+<!-- PONTOS -->
 
-  <div class="container evaluation-grid">
+<section class="section dark" id="pontos">
 
-    <div>
+    <div class="container">
 
-      <div class="eyebrow">
-        05 · Diagnóstico
-      </div>
+        <span class="tag">
+            PONTO DA CARNE
+        </span>
 
-      <h2>
-        Qual é o seu foco<br>
-        no próximo treino?
-      </h2>
+        <h2>
+            Aprenda a reconhecer o ponto.
+        </h2>
 
-      <p>
-        Avalie de 1 a 10. O número não mede “talento”;
-        ele mostra onde vale concentrar a próxima sessão.
-      </p>
-
-    </div>
+        <p class="section-intro">
+            Para cortes bovinos, o ponto culinário pode
+            variar conforme preferência. Use sempre um
+            termômetro para aprender e controlar o resultado.
+        </p>
 
 
-    <div class="score-tool">
+        <div class="doneness">
 
-      <div id="sliders"></div>
+            <div class="doneness-card">
 
-      <div class="score-result">
+                <span>01</span>
 
-        <div>
-          <span>ÍNDICE DE CONSISTÊNCIA</span>
-          <small>média dos parâmetros</small>
+                <h3>Mal passado</h3>
+
+                <strong>50–52 °C</strong>
+
+                <p>
+                    Centro vermelho e muito suculento.
+                </p>
+
+            </div>
+
+
+            <div class="doneness-card">
+
+                <span>02</span>
+
+                <h3>Ao ponto para mal</h3>
+
+                <strong>54–57 °C</strong>
+
+                <p>
+                    Centro vermelho/rosado.
+                </p>
+
+            </div>
+
+
+            <div class="doneness-card">
+
+                <span>03</span>
+
+                <h3>Ao ponto</h3>
+
+                <strong>58–63 °C</strong>
+
+                <p>
+                    Centro rosado e suculento.
+                </p>
+
+            </div>
+
+
+            <div class="doneness-card">
+
+                <span>04</span>
+
+                <h3>Ao ponto para bem</h3>
+
+                <strong>65–68 °C</strong>
+
+                <p>
+                    Centro pouco rosado.
+                </p>
+
+            </div>
+
+
+            <div class="doneness-card">
+
+                <span>05</span>
+
+                <h3>Bem passado</h3>
+
+                <strong>70 °C+</strong>
+
+                <p>
+                    Centro praticamente sem rosa.
+                </p>
+
+            </div>
+
         </div>
 
-        <strong id="total">
-          5,0
-        </strong>
 
-      </div>
+        <div class="warning">
+
+            <strong>⚠ Segurança alimentar</strong>
+
+            <p>
+                As temperaturas culinárias acima são referências
+                de preferência para cortes bovinos. Para segurança,
+                cortes inteiros de bovino, suíno, cordeiro e vitela
+                devem atingir pelo menos 63 °C e descansar por
+                3 minutos; carnes moídas, 71 °C; aves, 74 °C.
+            </p>
+
+        </div>
 
     </div>
 
-  </div>
+</section>
+
+
+<!-- VÍDEOS -->
+
+<section class="section" id="videos">
+
+    <div class="container">
+
+        <span class="tag">
+            AULAS EM VÍDEO
+        </span>
+
+        <h2>
+            Veja a técnica sendo executada.
+        </h2>
+
+        <div class="video-grid">
+
+            <article class="video-card">
+
+                <div class="video">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/fU8TdD3_YJY"
+                        title="Como acertar o ponto da carne no churrasco"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <div class="video-content">
+
+                    <h3>
+                        Picanha e ponto da carne
+                    </h3>
+
+                    <p>
+                        Aula prática mostrando preparação,
+                        churrasqueira e controle do ponto.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="video-card">
+
+                <div class="video">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/kHkbLUU7q3w"
+                        title="Como fazer costela na churrasqueira"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <div class="video-content">
+
+                    <h3>
+                        Costela na churrasqueira
+                    </h3>
+
+                    <p>
+                        Exemplo de técnica para uma peça
+                        que exige mais tempo e controle.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CHECKLIST -->
+
+<section class="section">
+
+    <div class="container">
+
+        <span class="tag">
+            CHECKLIST
+        </span>
+
+        <h2>
+            Antes de colocar a carne na grelha.
+        </h2>
+
+
+        <div class="checklist">
+
+            <label>
+                <input type="checkbox">
+                Tenho carvão/brasa suficiente.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Criei uma zona quente e outra indireta.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                A carne está preparada e temperada.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Tenho um termômetro disponível.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Tenho uma pinça adequada.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Sei qual temperatura quero atingir.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Tenho um prato limpo para a carne pronta.
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Vou deixar a carne descansar.
+            </label>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -527,78 +709,91 @@
 
 <footer>
 
-  <div class="container footer-grid">
+    <div class="container footer-content">
 
-    <div>
+        <div>
 
-      <a class="logo" href="#topo">
+            <h3>
+                Guia dos Assadores
+            </h3>
 
-        <span class="logo-mark">
-          GA
-        </span>
+            <p>
+                Aprenda fogo, carne, tempero,
+                temperatura e técnica.
+            </p>
 
-        <span>
-          Guia dos <b>Assadores</b>
-        </span>
+        </div>
 
-      </a>
-
-      <p>
-        Projeto aberto para estudo, registro e evolução.
-      </p>
-
-    </div>
-
-
-    <div>
-
-      <span class="footer-label">
-        NAVEGAÇÃO
-      </span>
-
-      <a href="#metodo">
-        Método
-      </a>
-
-      <a href="#parametros">
-        Parâmetros
-      </a>
-
-      <a href="#treino">
-        Treino
-      </a>
+        <div>
+            <strong>GitHub Ready</strong>
+            <p>
+                HTML + CSS + JavaScript
+            </p>
+        </div>
 
     </div>
-
-
-    <div>
-
-      <span class="footer-label">
-        PRINCÍPIO
-      </span>
-
-      <p>
-        Segurança alimentar vem antes do resultado.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div class="container footer-bottom">
-
-    <span>
-      Guia dos Assadores · GitHub Pages
-    </span>
-
-    <a href="#topo">
-      Voltar ao topo ↑
-    </a>
-
-  </div>
 
 </footer>
+
+
+<!-- MODAL -->
+
+<div class="modal" id="meatModal">
+
+    <div class="modal-box">
+
+        <button class="close" id="closeModal">
+            ×
+        </button>
+
+        <img id="modalImage" src="" alt="">
+
+        <div class="modal-content">
+
+            <span class="tag" id="modalCategory"></span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <div class="modal-info">
+
+                <div>
+                    <small>Tempero</small>
+                    <strong id="modalSeasoning"></strong>
+                </div>
+
+                <div>
+                    <small>Fogo</small>
+                    <strong id="modalFire"></strong>
+                </div>
+
+                <div>
+                    <small>Técnica</small>
+                    <strong id="modalTechnique"></strong>
+                </div>
+
+            </div>
+
+
+            <h3>
+                Ponto / temperatura
+            </h3>
+
+            <p id="modalPoint"></p>
+
+
+            <h3>
+                Como fazer
+            </h3>
+
+            <ol id="modalSteps"></ol>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 <script src="script.js"></script>
